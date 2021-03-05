@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		var vec=[];
+	</script>
+	<title></title>
+</head>
+<body style="background-color: #393F45;">
+<center>
+	<h1 style="font-size: 30px; font-family: cursive; height: 250px; width: 400px; color: white; background-color: black;border-radius: 10px; margin-top: 170px; border:solid blue 5px;">Digite 5 numeros
+
+	<input type="text" name="" id="caja1">
+	<input type="submit" name="" id="boton1" onclick="llenar();">
+	<br><br>
+
+		<input type="submit" name="" id="caja2" value="" style=" height: 35px; width: 150px; margin-top: 15px; background-color: blue; color: white; font-family: cursive;	
+		font-size: 20px;">
+		<input type="submit" name="" id="boton2" onclick="mostrar();" value="Mostrar Mayor">
+
+
+			<form action="ejercicio3.html">
+		<input type="submit" name="" value="Ejercicio 3" style="margin-left: 0px; height: 40px; width: 150px; margin-top: 90px; background-color: black; color: white; font-family: cursive;	
+		font-size: 20px; ">
+	</form>
+		</h1>
+</center>
+
+		<script>
+
+			function llenar()
+			 {  
+
+			 		  var t=vec.length;
+
+			 		
+				
+       	   	 			if (t==5)
+       	   	 			 {
+       	   	 			 	alert('No puede ingresar mas numeros');
+
+       	   	 			}	
+       	   	 			else
+       	   	 			{
+
+			 		var caja1=document.getElementById("caja1");
+       	   					agregar=caja1.value;
+       	   	 				vec.push(agregar);
+
+       	   	 			}
+       	   	 		
+						
+       	   	 				
+       	   	 				}
+		
+
+			function mostrar()
+			 {
+			 	var caja1=document.getElementById("caja1");
+			 	var caja2=document.getElementById("caja2");
+			 	var mayor=0;
+			 	var x=0;
+			
+
+			 	for (var x = 0; x<=5; x++) 
+
+       	  						{
+       	  							if (vec[x]>mayor) 
+       	  							{
+       	  		
+       	  								mayor=vec[x];
+       	  								}
+
+       	  									}
+			caja2.value=mayor;
+			
+			}
+		</script>
+</body>
+</html>

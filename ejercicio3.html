@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejercicio 3</title>
+</head>
+<link rel="stylesheet" type="text/css" href="estilo3.css">
+<body onmousemove="position(event)">
+
+<div id="mousePositions"></div>
+<div id="hola2"	class="no"><center><br>EL MOUSE ESTA FUERA <br>DEL CUADRO</center> </div>
+<div id="hola"	class="lola"><center><br>EL MOUSE ESTA DENTRO <br>DEL CUADRO</center> </div>
+
+<script>
+
+function position(event){
+
+var n1=document.getElementById('hola');
+var n2=document.getElementById('hola2');
+	var x = event.clientX;
+	var y = event.clientY;
+
+	var mousePositions = document.getElementById('mousePositions');
+
+
+
+if(x>450&&x<1050&&y>210&&y<510)
+{
+	console.log("llegue");
+	n2.className="nod";
+	n1.className="lolo";
+}
+else
+{
+	n1.className="lola";
+	n2.className="no";
+}
+}
+
+
+</script>
+
+
+
+
+
+
+</body>
+
+</html>

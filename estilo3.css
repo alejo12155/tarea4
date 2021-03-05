@@ -1,0 +1,47 @@
+body{
+	background-color: #393F45;
+}
+#mousePositions{
+	
+	color:#000000;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	height:300px;
+	overflow:auto;
+	width:150px;
+				}
+.lola{
+display:none;
+		}
+
+.lolo{ 
+	position: absolute;
+	top: 30%;
+	left: 30%;
+	width: 40%;
+	height: 40%;
+	background: black;
+	color:white;
+	font-family: fantasy;
+	font-size:350%; 
+	border: solid blue 3px;
+	}
+
+	.no{
+	position: absolute;
+	top: 30%;
+	left: 30%;
+	width: 40%;
+	height: 40%;
+	background: gray;
+	border: solid black 3px;
+	color:white;
+	font-family: serif;
+	font-size:350%; 
+	}
+
+	.nod{
+		display:none;
+	}
+
+

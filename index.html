@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		var a=10;
+	</script>
+	<title>Ejercicio 1</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+
+	
+	<body onload="saludo()">
+
+
+	<div id="cuadro" class="cuadro">
+		<h1 style=" margin-left: 130px; font-size: 40px;">HOLA
+	</div>
+
+
+	<script>
+
+	function contador()
+	{
+		 console.log(a)
+		a=a-1;
+			cuadro=document.getElementById('cuadro');
+			cuadro.innerHTML = a;
+			if(a==0){
+				clearInterval(c);
+
+			cuadro.innerHTML = "Terminé ";
+		}
+		
+	}
+
+	function contador2()
+	{
+		c=setInterval(contador,1000)
+	}
+
+
+	function saludo(){
+		
+	  setTimeout(contador2,5000);
+
+	}
+
+
+
+	</script>
+	<form action="ejercicio2.html">
+		<input type="submit" name="" value="Ejercicio 2" style="margin-left: 630px; height: 40px; width: 150px; margin-top: 15px; background-color: black; color: white; font-family: cursive;	
+		font-size: 20px; ">
+	</form>
+
+		</h1>
+
+
+</body>
+</html>
